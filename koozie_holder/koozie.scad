@@ -16,7 +16,7 @@ default_holder_length=102;
 // To change direction of text use ltr = left to right, btt = bottom to top, ttb = top to bottom, rtt = right to left
 module add_text(text="TEST", font=default_font, size=default_font_size, height=6, direction=default_font_direction, spacing=default_font_spacing) {
         linear_extrude(height = height) {
-            text(text, font=font, size=size, direction="ttb", spacing=spacing, halign="center", valign="center");
+            text(text, font=font, size=size, direction=direction, spacing=spacing, halign="center", valign="center");
         }
 }
 
